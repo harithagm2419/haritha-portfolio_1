@@ -1,6 +1,19 @@
 export default function Home() {
   return (
     <main className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white min-h-screen">
+      {/* NAVBAR */}
+<nav className="fixed top-0 left-0 w-full bg-black/30 backdrop-blur-md z-50">
+  <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 className="font-bold text-lg">HT</h1>
+    <div className="space-x-6 text-sm">
+      <a href="#about" className="hover:text-blue-400">About</a>
+      <a href="#skills" className="hover:text-blue-400">Skills</a>
+      <a href="#projects" className="hover:text-blue-400">Projects</a>
+      <a href="#experience" className="hover:text-blue-400">Experience</a>
+      <a href="#contact" className="hover:text-blue-400">Contact</a>
+    </div>
+  </div>
+</nav>
 
       {/* HERO SECTION */}
       <section className="flex flex-col items-center justify-center text-center py-32 px-6">
@@ -18,7 +31,7 @@ export default function Home() {
       </section>
 
       {/* ABOUT SECTION */}
-      <section className="py-20 px-6 max-w-5xl mx-auto">
+      <section id="about" className="py-20 px-6 max-w-5xl mx-auto">
         <h2 className="text-3xl font-semibold mb-6 text-blue-400">About Me</h2>
         <p className="text-gray-300 leading-relaxed">
           I am a Master’s student in Communication and Media Engineering at Hochschule Offenburg.
@@ -30,7 +43,7 @@ export default function Home() {
       </section>
 
       {/* SKILLS SECTION */}
-      <section className="py-20 px-6 bg-slate-900/60">
+      <section id="skills" className="py-20 px-6 max-w-5xl mx-auto">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-semibold mb-10 text-blue-400">Skills</h2>
 
@@ -56,7 +69,7 @@ export default function Home() {
       </section>
 
       {/* PROJECTS SECTION */}
-      <section className="py-20 px-6 max-w-5xl mx-auto">
+      <section id="projects" className="py-20 px-6 max-w-5xl mx-auto">
         <h2 className="text-3xl font-semibold mb-10 text-blue-400">Projects</h2>
 
         <div className="space-y-6">
@@ -85,7 +98,7 @@ export default function Home() {
       </section>
 
       {/* EXPERIENCE SECTION */}
-      <section className="py-20 px-6 bg-slate-900/60">
+      <section id="experience" className="py-20 px-6 max-w-5xl mx-auto">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-semibold mb-10 text-blue-400">
             Experience
@@ -120,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section className="py-20 px-6 text-center">
+      <section id="contact" className="py-20 px-6 max-w-5xl mx-auto">
         <h2 className="text-3xl font-semibold mb-6 text-blue-400">
           Contact
         </h2>
