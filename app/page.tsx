@@ -6,7 +6,7 @@ export default function Home() {
   <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
     <h1 className="font-bold text-lg">HT</h1>
     <div className="space-x-6 text-sm">
-      <a href="#about" className="hover:text-blue-400">ABOUT</a>
+      <a href="#about" className="hover:text-blue-400">About</a>
       <a href="#skills" className="hover:text-blue-400">Skills</a>
       <a href="#projects" className="hover:text-blue-400">Projects</a>
       <a href="#experience" className="hover:text-blue-400">Experience</a>
@@ -32,7 +32,7 @@ export default function Home() {
 
       {/* ABOUT SECTION */}
       <section id="about" className="py-20 px-6 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-6 text-blue-400">About Me</h2>
+        <h2 className="text-3xl font-semibold mb-6 text-blue-400">About you</h2>
         <p className="text-gray-300 leading-relaxed">
           I am a Master’s student in Communication and Media Engineering at Hochschule Offenburg.
           With professional experience at Infosys as a Data Analyst and BI Analyst,
