@@ -6,7 +6,7 @@ export default function Home() {
   <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
     <h1 className="font-bold text-lg">HT</h1>
     <div className="space-x-6 text-sm">
-      <a href="#about" className="hover:text-blue-400">About</a>
+      <a href="#about" className="hover:text-blue-400">ABOUT</a>
       <a href="#skills" className="hover:text-blue-400">Skills</a>
       <a href="#projects" className="hover:text-blue-400">Projects</a>
       <a href="#experience" className="hover:text-blue-400">Experience</a>
