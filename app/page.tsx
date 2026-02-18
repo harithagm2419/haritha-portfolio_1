@@ -1,15 +1,143 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-r from-slate-900 to-blue-900 text-white flex flex-col items-center justify-center p-10">
-      <h1 className="text-5xl font-bold mb-6">Haritha Thurpati</h1>
-      <p className="text-xl mb-4">
-        Data Analyst | BI Developer | Data Engineering Enthusiast
-      </p>
-      <p className="max-w-xl text-center text-gray-300">
-        Master’s student with hands-on experience in data analytics,
-        BI visualization, and data pipeline development.
-        Skilled in SQL, Python, PySpark, and Power BI.
-      </p>
+    <main className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white min-h-screen">
+
+      {/* HERO SECTION */}
+      <section className="flex flex-col items-center justify-center text-center py-32 px-6">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          Haritha Thurpati
+        </h1>
+        <p className="text-xl mb-4 text-blue-300">
+          Data Analyst | BI Developer | Data Engineering Enthusiast
+        </p>
+        <p className="max-w-2xl text-gray-300">
+          Master’s student with hands-on experience in data analytics,
+          BI visualization, and scalable data pipeline development.
+          Skilled in SQL, Python, PySpark, and Power BI.
+        </p>
+      </section>
+
+      {/* ABOUT SECTION */}
+      <section className="py-20 px-6 max-w-5xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-6 text-blue-400">About Me</h2>
+        <p className="text-gray-300 leading-relaxed">
+          I am a Master’s student in Communication and Media Engineering at Hochschule Offenburg.
+          With professional experience at Infosys as a Data Analyst and BI Analyst,
+          I specialize in transforming raw enterprise data into meaningful insights.
+          My work spans SQL-based analytics, PySpark data processing in Databricks,
+          and interactive dashboard creation using Power BI.
+        </p>
+      </section>
+
+      {/* SKILLS SECTION */}
+      <section className="py-20 px-6 bg-slate-900/60">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-semibold mb-10 text-blue-400">Skills</h2>
+
+          <div className="grid md:grid-cols-3 gap-6">
+
+            <div className="bg-slate-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+              <h3 className="font-semibold text-xl mb-3">Programming</h3>
+              <p className="text-gray-300">Python, SQL, PySpark, Java</p>
+            </div>
+
+            <div className="bg-slate-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+              <h3 className="font-semibold text-xl mb-3">Data & BI</h3>
+              <p className="text-gray-300">Power BI, DAX, MSBI, Data Modeling, Star Schema</p>
+            </div>
+
+            <div className="bg-slate-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+              <h3 className="font-semibold text-xl mb-3">Tools</h3>
+              <p className="text-gray-300">Databricks, Pandas, Matplotlib, Git, React</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* PROJECTS SECTION */}
+      <section className="py-20 px-6 max-w-5xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-10 text-blue-400">Projects</h2>
+
+        <div className="space-y-6">
+
+          <div className="bg-slate-800 p-6 rounded-xl hover:scale-[1.02] transition">
+            <h3 className="text-xl font-semibold mb-2">
+              Demand Forecasting Model
+            </h3>
+            <p className="text-gray-300">
+              Built a forecasting model using Python (Pandas, Matplotlib) to analyze
+              sales trends and predict future demand patterns.
+            </p>
+          </div>
+
+          <div className="bg-slate-800 p-6 rounded-xl hover:scale-[1.02] transition">
+            <h3 className="text-xl font-semibold mb-2">
+              Data-Driven Market Analysis
+            </h3>
+            <p className="text-gray-300">
+              Conducted exploratory data analysis to support product decision-making,
+              using statistical techniques and visualization tools.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* EXPERIENCE SECTION */}
+      <section className="py-20 px-6 bg-slate-900/60">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-semibold mb-10 text-blue-400">
+            Experience
+          </h2>
+
+          <div className="space-y-8">
+
+            <div>
+              <h3 className="text-xl font-semibold">
+                Infosys Ltd – Business Intelligence Analyst
+              </h3>
+              <p className="text-gray-400">May 2023 – Sept 2024</p>
+              <p className="text-gray-300 mt-2">
+                Processed large-scale enterprise datasets using SQL and PySpark,
+                delivered Power BI dashboards for procurement and strategic planning.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold">
+                Working Student – Data Science (WLRI)
+              </h3>
+              <p className="text-gray-400">July 2025 – Aug 2025</p>
+              <p className="text-gray-300 mt-2">
+                Extracted and labeled 3D point cloud data using Python,
+                supporting robotics research workflows.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT SECTION */}
+      <section className="py-20 px-6 text-center">
+        <h2 className="text-3xl font-semibold mb-6 text-blue-400">
+          Contact
+        </h2>
+
+        <p className="text-gray-300 mb-4">
+          📧 harithagm2419@gmail.com
+        </p>
+
+        <a
+          href="https://linkedin.com/in/haritha-thurpati-7b9280225"
+          target="_blank"
+          className="text-blue-400 hover:underline"
+        >
+          LinkedIn Profile
+        </a>
+      </section>
+
     </main>
   );
 }
