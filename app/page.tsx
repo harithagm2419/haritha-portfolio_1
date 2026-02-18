@@ -73,10 +73,10 @@ export default function Home() {
 
      {/* PROJECTS SECTION */}
       <section className="py-20 px-6 bg-gradient-to-b from-[#0f172a] to-[#0b1120]">
-  <div className="max-w-6xl mx-auto">
-    <h2 className="text-3xl font-bold text-center text-white mb-12">
+      <div className="max-w-6xl mx-auto">
+      <h2 className="text-3xl font-bold text-center text-white mb-12">
       DataCamp Python Projects
-    </h2>
+      </h2>
 
     <div className="grid md:grid-cols-3 gap-8">
 
@@ -131,8 +131,6 @@ export default function Home() {
     </div>
   </div>
 </section>
-
-
 
       {/* EXPERIENCE SECTION */}
       <section id="experience" className="py-20 px-6 max-w-5xl mx-auto">
