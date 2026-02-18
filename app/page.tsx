@@ -1,3 +1,6 @@
+"use client";
+import { useState } from "react";
+
 export default function Home() {
   return (
     <main className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white min-h-screen">
@@ -68,7 +71,68 @@ export default function Home() {
         </div>
       </section>
 
-    
+     {/* PROJECTS SECTION */}
+      <section className="py-20 px-6 bg-gradient-to-b from-[#0f172a] to-[#0b1120]">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-3xl font-bold text-center text-white mb-12">
+      DataCamp Python Projects
+    </h2>
+
+    <div className="grid md:grid-cols-3 gap-8">
+
+      {/* Project 1 */}
+      <ExpandableCard
+        title="History of Lego Sets"
+        description="Explored evolution of Lego sets using exploratory data analysis and visualization."
+        approach="Cleaned historical datasets, performed trend analysis, and visualized patterns in set complexity and themes."
+        tech={["Python", "Pandas", "Matplotlib"]}
+      />
+
+      {/* Project 2 */}
+      <ExpandableCard
+        title="Demand Forecasting Model"
+        description="Built a forecasting model to predict product demand using time-series analysis."
+        approach="Applied moving averages and regression techniques to analyze seasonal patterns and forecast future demand."
+        tech={["Python", "Pandas", "Matplotlib"]}
+      />
+
+      {/* Project 3 */}
+      <ExpandableCard
+        title="Market Analysis – Product Management"
+        description="Data-driven market analysis to inform product strategy and positioning."
+        approach="Performed customer segmentation, trend analysis, and dashboard reporting to guide business decisions."
+        tech={["Python", "Pandas", "Data Cleaning"]}
+      />
+
+      {/* Project 4 */}
+      <ExpandableCard
+        title="NYC Public School Test Scores"
+        description="Explored standardized test results across NYC public schools."
+        approach="Cleaned datasets, calculated performance metrics, and visualized disparities using statistical techniques."
+        tech={["Python", "Pandas", "Matplotlib"]}
+      />
+
+      {/* Project 5 */}
+      <ExpandableCard
+        title="Investigating Netflix Movies"
+        description="Analyzed Netflix movie catalog to discover trends in content and ratings."
+        approach="Used EDA to examine genre distribution, release trends, and viewer rating patterns."
+        tech={["Python", "Pandas", "EDA"]}
+      />
+
+      {/* Project 6 */}
+      <ExpandableCard>
+        title="Debugging Sales Data Workflow"
+        description="Identified and resolved data pipeline issues in a sales workflow."
+        approach="Traced data inconsistencies, cleaned corrupted entries, and optimized transformation logic."
+        tech={["Python", "Data Cleaning"]}
+      </ExpandableCard>
+
+    </div>
+  </div>
+</section>
+
+
 
       {/* EXPERIENCE SECTION */}
       <section id="experience" className="py-20 px-6 max-w-5xl mx-auto">
@@ -125,5 +189,41 @@ export default function Home() {
       </section>
 
     </main>
+  );
+}
+function ExpandableCard({ title, description, approach, tech }: any) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div
+      onClick={() => setOpen(!open)}
+      className="cursor-pointer bg-[#111827] p-6 rounded-xl border border-gray-700 transition-all duration-300 hover:scale-105 hover:border-blue-500"
+    >
+      <h3 className="text-xl font-semibold text-white mb-3">
+        {title}
+      </h3>
+
+      <p className="text-gray-400 mb-4">
+        {description}
+      </p>
+
+      {open && (
+        <div className="mt-4 border-t border-gray-700 pt-4 animate-fadeIn">
+          <p className="text-blue-400 font-medium mb-2">Approach:</p>
+          <p className="text-gray-400 text-sm">{approach}</p>
+        </div>
+      )}
+
+      <div className="flex flex-wrap gap-3 mt-4 text-sm text-blue-400">
+        {tech.map((item: string, index: number) => (
+          <span
+            key={index}
+            className="bg-blue-500/10 px-3 py-1 rounded-full"
+          >
+            {item}
+          </span>
+        ))}
+      </div>
+    </div>
   );
 }
