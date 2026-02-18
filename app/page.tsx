@@ -98,45 +98,6 @@ export default function Home() {
   </div>
 </section>
 
-      <section className="py-20 px-6 bg-gradient-to-b from-[#0f172a] to-[#0a0f1f]">
-  <h2 className="text-3xl font-bold text-center mb-12 text-white">
-    DataCamp Python Projects
-  </h2>
-
-  <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-    const ProjectCard = ({ title, description, approach, tech }: any) => {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <div
-      onClick={() => setOpen(!open)}
-      className="cursor-pointer bg-[#111827] p-6 rounded-xl border border-gray-700 transition-all duration-300 hover:scale-105"
-    >
-      <h3 className="text-xl font-semibold text-white mb-3">
-        {title}
-      </h3>
-
-      <p className="text-gray-400 mb-4">
-        {description}
-      </p>
-
-      {open && (
-        <div className="mt-4 border-t border-gray-700 pt-4">
-          <p className="text-blue-400 font-medium mb-2">Approach:</p>
-          <p className="text-gray-400 text-sm">{approach}</p>
-        </div>
-      )}
-
-      <div className="flex gap-3 mt-4 text-sm text-blue-400">
-        {tech.map((item: string, index: number) => (
-          <span key={index}>{item}</span>
-        ))}
-      </div>
-    </div>
-  );
-};
-
 
     {/* Card 2 */}
     <div className="bg-[#111827] p-6 rounded-xl shadow-lg border border-gray-800 hover:scale-105 transition duration-300">
