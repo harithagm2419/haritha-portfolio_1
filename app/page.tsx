@@ -68,7 +68,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROJECTS SECTION */}
+      {/* PROJECTS SECTION
       <section id="projects" className="py-20 px-6 max-w-5xl mx-auto">
         <h2 className="text-3xl font-semibold mb-10 text-blue-400">Projects</h2>
 
@@ -95,7 +95,62 @@ export default function Home() {
           </div>
 
         </div>
-      </section>
+      </section> */}
+      <section className="py-20 px-6 bg-gradient-to-b from-[#0f172a] to-[#0a0f1f]">
+  <h2 className="text-3xl font-bold text-center mb-12 text-white">
+    DataCamp Python Projects
+  </h2>
+
+  <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+    {/* Card 1 */}
+    <div className="bg-[#111827] p-6 rounded-xl shadow-lg border border-gray-800 hover:scale-105 transition duration-300">
+      <h3 className="text-xl font-semibold text-white mb-3">
+        History of Lego Sets
+      </h3>
+      <p className="text-gray-400 mb-4">
+        Explored the evolution of Lego sets using exploratory data analysis and visualizations.
+      </p>
+      <div className="flex flex-wrap gap-2">
+        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Python</span>
+        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Pandas</span>
+        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Matplotlib</span>
+      </div>
+    </div>
+
+    {/* Card 2 */}
+    <div className="bg-[#111827] p-6 rounded-xl shadow-lg border border-gray-800 hover:scale-105 transition duration-300">
+      <h3 className="text-xl font-semibold text-white mb-3">
+        Demand Forecasting Model
+      </h3>
+      <p className="text-gray-400 mb-4">
+        Built a time-series forecasting model to predict product demand.
+      </p>
+      <div className="flex flex-wrap gap-2">
+        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Python</span>
+        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Pandas</span>
+        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Time Series</span>
+      </div>
+    </div>
+
+    {/* Card 3 */}
+    <div className="bg-[#111827] p-6 rounded-xl shadow-lg border border-gray-800 hover:scale-105 transition duration-300">
+      <h3 className="text-xl font-semibold text-white mb-3">
+        Market Analysis – Product Strategy
+      </h3>
+      <p className="text-gray-400 mb-4">
+        Performed data-driven market analysis to support product decisions.
+      </p>
+      <div className="flex flex-wrap gap-2">
+        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Python</span>
+        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">EDA</span>
+        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Data Cleaning</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
       {/* EXPERIENCE SECTION */}
       <section id="experience" className="py-20 px-6 max-w-5xl mx-auto">
