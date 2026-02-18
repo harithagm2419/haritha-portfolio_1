@@ -1,6 +1,3 @@
-"use client";
-import { useState } from "react";
-
 export default function Home() {
   return (
     <main className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white min-h-screen">
@@ -71,67 +68,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROJECTS SECTION */}
-      <section className="py-20 px-6">
-  <div className="max-w-6xl mx-auto">
-    <h2 className="text-3xl font-bold text-center text-white mb-12">
-      Data Projects
-    </h2>
-
-    <div className="grid md:grid-cols-3 gap-8">
-
-      <ProjectCard
-        title="History of Lego Sets"
-        description="Explored evolution of Lego sets using EDA and visualization."
-        approach="Cleaned dataset, performed trend analysis, and visualized patterns in set complexity and themes."
-        tech={["Python", "Pandas", "Matplotlib"]}
-      />
-
-      <ProjectCard
-        title="Demand Forecasting Model"
-        description="Built time-series model to predict demand."
-        approach="Applied moving averages and regression models to forecast seasonal trends."
-        tech={["Python", "Pandas", "Matplotlib"]}
-      />
-
-    </div>
-  </div>
-</section>
-
-
-    {/* Card 2 */}
-    <div className="bg-[#111827] p-6 rounded-xl shadow-lg border border-gray-800 hover:scale-105 transition duration-300">
-      <h3 className="text-xl font-semibold text-white mb-3">
-        Demand Forecasting Model
-      </h3>
-      <p className="text-gray-400 mb-4">
-        Built a time-series forecasting model to predict product demand.
-      </p>
-      <div className="flex flex-wrap gap-2">
-        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Python</span>
-        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Pandas</span>
-        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Time Series</span>
-      </div>
-    </div>
-
-    {/* Card 3 */}
-    <div className="bg-[#111827] p-6 rounded-xl shadow-lg border border-gray-800 hover:scale-105 transition duration-300">
-      <h3 className="text-xl font-semibold text-white mb-3">
-        Market Analysis – Product Strategy
-      </h3>
-      <p className="text-gray-400 mb-4">
-        Performed data-driven market analysis to support product decisions.
-      </p>
-      <div className="flex flex-wrap gap-2">
-        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Python</span>
-        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">EDA</span>
-        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Data Cleaning</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
+    
 
       {/* EXPERIENCE SECTION */}
       <section id="experience" className="py-20 px-6 max-w-5xl mx-auto">
