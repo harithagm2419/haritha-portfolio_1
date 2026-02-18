@@ -1,3 +1,6 @@
+"use client";
+import { useState } from "react";
+
 export default function Home() {
   return (
     <main className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white min-h-screen">
@@ -68,34 +71,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROJECTS SECTION
-      <section id="projects" className="py-20 px-6 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-10 text-blue-400">Projects</h2>
+      {/* PROJECTS SECTION */}
+      <section className="py-20 px-6">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-3xl font-bold text-center text-white mb-12">
+      Data Projects
+    </h2>
 
-        <div className="space-y-6">
+    <div className="grid md:grid-cols-3 gap-8">
 
-          <div className="bg-slate-800 p-6 rounded-xl hover:scale-[1.02] transition">
-            <h3 className="text-xl font-semibold mb-2">
-              Demand Forecasting Model
-            </h3>
-            <p className="text-gray-300">
-              Built a forecasting model using Python (Pandas, Matplotlib) to analyze
-              sales trends and predict future demand patterns.
-            </p>
-          </div>
+      <ProjectCard
+        title="History of Lego Sets"
+        description="Explored evolution of Lego sets using EDA and visualization."
+        approach="Cleaned dataset, performed trend analysis, and visualized patterns in set complexity and themes."
+        tech={["Python", "Pandas", "Matplotlib"]}
+      />
 
-          <div className="bg-slate-800 p-6 rounded-xl hover:scale-[1.02] transition">
-            <h3 className="text-xl font-semibold mb-2">
-              Data-Driven Market Analysis
-            </h3>
-            <p className="text-gray-300">
-              Conducted exploratory data analysis to support product decision-making,
-              using statistical techniques and visualization tools.
-            </p>
-          </div>
+      <ProjectCard
+        title="Demand Forecasting Model"
+        description="Built time-series model to predict demand."
+        approach="Applied moving averages and regression models to forecast seasonal trends."
+        tech={["Python", "Pandas", "Matplotlib"]}
+      />
 
-        </div>
-      </section> */}
+    </div>
+  </div>
+</section>
+
       <section className="py-20 px-6 bg-gradient-to-b from-[#0f172a] to-[#0a0f1f]">
   <h2 className="text-3xl font-bold text-center mb-12 text-white">
     DataCamp Python Projects
@@ -103,20 +105,38 @@ export default function Home() {
 
   <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-    {/* Card 1 */}
-    <div className="bg-[#111827] p-6 rounded-xl shadow-lg border border-gray-800 hover:scale-105 transition duration-300">
+    const ProjectCard = ({ title, description, approach, tech }: any) => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div
+      onClick={() => setOpen(!open)}
+      className="cursor-pointer bg-[#111827] p-6 rounded-xl border border-gray-700 transition-all duration-300 hover:scale-105"
+    >
       <h3 className="text-xl font-semibold text-white mb-3">
-        History of Lego Sets
+        {title}
       </h3>
+
       <p className="text-gray-400 mb-4">
-        Explored the evolution of Lego sets using exploratory data analysis and visualizations.
+        {description}
       </p>
-      <div className="flex flex-wrap gap-2">
-        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Python</span>
-        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Pandas</span>
-        <span className="px-3 py-1 bg-teal-900 text-teal-300 rounded-full text-sm">Matplotlib</span>
+
+      {open && (
+        <div className="mt-4 border-t border-gray-700 pt-4">
+          <p className="text-blue-400 font-medium mb-2">Approach:</p>
+          <p className="text-gray-400 text-sm">{approach}</p>
+        </div>
+      )}
+
+      <div className="flex gap-3 mt-4 text-sm text-blue-400">
+        {tech.map((item: string, index: number) => (
+          <span key={index}>{item}</span>
+        ))}
       </div>
     </div>
+  );
+};
+
 
     {/* Card 2 */}
     <div className="bg-[#111827] p-6 rounded-xl shadow-lg border border-gray-800 hover:scale-105 transition duration-300">
