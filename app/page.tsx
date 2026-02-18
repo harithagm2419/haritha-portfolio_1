@@ -121,12 +121,12 @@ export default function Home() {
       />
 
       {/* Project 6 */}
-      <ExpandableCard>
+      <ExpandableCard
         title="Debugging Sales Data Workflow"
         description="Identified and resolved data pipeline issues in a sales workflow."
         approach="Traced data inconsistencies, cleaned corrupted entries, and optimized transformation logic."
         tech={["Python", "Data Cleaning"]}
-      </ExpandableCard>
+      />
 
     </div>
   </div>
