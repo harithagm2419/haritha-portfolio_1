@@ -32,7 +32,7 @@ export default function Home() {
 
       {/* ABOUT SECTION */}
       <section id="about" className="py-20 px-6 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-6 text-blue-400">About you</h2>
+        <h2 className="text-3xl font-semibold mb-6 text-blue-400">About me</h2>
         <p className="text-gray-300 leading-relaxed">
           I am a Master’s student in Communication and Media Engineering at Hochschule Offenburg.
           With professional experience at Infosys as a Data Analyst and BI Analyst,
