@@ -72,11 +72,9 @@ export default function Home() {
       </section>
 
      {/* PROJECTS SECTION */}
-      <section className="py-20 px-6 bg-gradient-to-b from-[#0f172a] to-[#0b1120]">
-      <div className="max-w-6xl mx-auto">
-      <h2 className="text-3xl font-bold text-center text-white mb-12">
-      DataCamp Python Projects
-      </h2>
+     <section id="projects" className="py-20 px-6 max-w-5xl mx-auto">
+     <div className="max-w-6xl mx-auto">
+      <h2 className="text-3xl font-semibold mb-10 text-blue-400">DataCamp Python Projects</h2>
 
     <div className="grid md:grid-cols-3 gap-8">
 
