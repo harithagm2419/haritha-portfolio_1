@@ -130,40 +130,116 @@ export default function Home() {
   </div>
 </section>
 
-      {/* EXPERIENCE SECTION */}
-      <section id="experience" className="py-20 px-6 max-w-5xl mx-auto">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-semibold mb-10 text-blue-400">
-            Experience
-          </h2>
+{/* EXPERIENCE SECTION */}
+<section id="experience" className="py-20 px-6 max-w-5xl mx-auto">
+  <h2 className="text-3xl font-semibold mb-16 text-blue-400 text-center">
+    Professional Experience
+  </h2>
 
-          <div className="space-y-8">
+  <div className="relative border-l border-slate-700">
 
-            <div>
-              <h3 className="text-xl font-semibold">
-                Infosys Ltd – Business Intelligence Analyst
-              </h3>
-              <p className="text-gray-400">May 2023 – Sept 2024</p>
-              <p className="text-gray-300 mt-2">
-                Processed large-scale enterprise datasets using SQL and PySpark,
-                delivered Power BI dashboards for procurement and strategic planning.
-              </p>
-            </div>
+    {/* ITEM 1 */}
+    <div className="mb-12 ml-8">
+      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
 
-            <div>
-              <h3 className="text-xl font-semibold">
-                Working Student – Data Science (WLRI)
-              </h3>
-              <p className="text-gray-400">July 2025 – Aug 2025</p>
-              <p className="text-gray-300 mt-2">
-                Extracted and labeled 3D point cloud data using Python,
-                supporting robotics research workflows.
-              </p>
-            </div>
+      <div className="bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+        <h3 className="text-lg font-semibold text-white">
+          Working Student – Python Programming
+        </h3>
+        <p className="text-sm text-blue-400">
+          Digital Supply Chain, Gengenbach | Nov 2025 – Dec 2025
+        </p>
 
-          </div>
-        </div>
-      </section>
+        <ul className="mt-4 text-slate-300 space-y-2 text-sm list-disc list-inside">
+          <li>Developed Python-based image & data processing solutions</li>
+          <li>Built React + Tailwind web interfaces</li>
+          <li>Supported backend–frontend analytical integrations</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* ITEM 2 */}
+    <div className="mb-12 ml-8">
+      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
+
+      <div className="bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+        <h3 className="text-lg font-semibold text-white">
+          Working Student – Data Science
+        </h3>
+        <p className="text-sm text-blue-400">
+          Work Life Robotics Institute, Offenburg | Jul 2025 – Aug 2025
+        </p>
+
+        <ul className="mt-4 text-slate-300 space-y-2 text-sm list-disc list-inside">
+          <li>Extracted and merged 3D sensor point cloud data</li>
+          <li>Labeled datasets using Open3D</li>
+          <li>Used Python (NumPy, Pandas) for validation & feature extraction</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* ITEM 3 */}
+    <div className="mb-12 ml-8">
+      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
+
+      <div className="bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+        <h3 className="text-lg font-semibold text-white">
+          Business Intelligence Analyst
+        </h3>
+        <p className="text-sm text-blue-400">
+          Infosys Ltd – Client: Cummins Inc. | May 2023 – Sep 2024
+        </p>
+
+        <ul className="mt-4 text-slate-300 space-y-2 text-sm list-disc list-inside">
+          <li>Analyzed enterprise data using MS SQL</li>
+          <li>Processed large datasets via PySpark (Databricks)</li>
+          <li>Built Power BI dashboards & forecasting models</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* ITEM 4 */}
+    <div className="mb-12 ml-8">
+      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
+
+      <div className="bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+        <h3 className="text-lg font-semibold text-white">
+          Data Analyst
+        </h3>
+        <p className="text-sm text-blue-400">
+          Infosys Ltd | Jul 2022 – Sep 2024
+        </p>
+
+        <ul className="mt-4 text-slate-300 space-y-2 text-sm list-disc list-inside">
+          <li>Built scalable PySpark pipelines</li>
+          <li>Optimized SQL performance</li>
+          <li>Designed star-schema data models</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* ITEM 5 */}
+    <div className="ml-8">
+      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
+
+      <div className="bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+        <h3 className="text-lg font-semibold text-white">
+          Data Analyst Intern
+        </h3>
+        <p className="text-sm text-blue-400">
+          Infosys Ltd | Mar 2022 – Jun 2022
+        </p>
+
+        <ul className="mt-4 text-slate-300 space-y-2 text-sm list-disc list-inside">
+          <li>Trained in Java, DBMS, UNIX</li>
+          <li>Learned ETL & dimensional data modeling</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
       {/* CONTACT SECTION */}
       <section id="contact" className="py-20 px-6 max-w-5xl mx-auto">
