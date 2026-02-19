@@ -193,28 +193,26 @@ function ExpandableCard({ title, description, approach, tech }: any) {
   return (
     <div
       onClick={() => setOpen(!open)}
-      className="cursor-pointer bg-[#111827] p-6 rounded-xl border border-gray-700 transition-all duration-300 hover:scale-105 hover:border-blue-500"
+      className="bg-[#0f172a] p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition cursor-pointer"
     >
-      <h3 className="text-xl font-semibold text-white mb-3">
-        {title}
-      </h3>
+      <h3 className="text-white font-semibold text-lg">{title}</h3>
 
-      <p className="text-gray-400 mb-4">
-        {description}
-      </p>
+      <p className="text-gray-400 mt-2">{description}</p>
 
       {open && (
-        <div className="mt-4 border-t border-gray-700 pt-4 animate-fadeIn">
-          <p className="text-blue-400 font-medium mb-2">Approach:</p>
-          <p className="text-gray-400 text-sm">{approach}</p>
+        <div className="mt-4 pt-4 border-t border-gray-700">
+          <p className="text-gray-300 text-sm">
+            <span className="text-blue-400 font-semibold">Approach: </span>
+            {approach}
+          </p>
         </div>
       )}
 
-      <div className="flex flex-wrap gap-3 mt-4 text-sm text-blue-400">
+      <div className="flex flex-wrap gap-2 mt-4">
         {tech.map((item: string, index: number) => (
           <span
             key={index}
-            className="bg-blue-500/10 px-3 py-1 rounded-full"
+            className="text-xs bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full"
           >
             {item}
           </span>
@@ -223,3 +221,4 @@ function ExpandableCard({ title, description, approach, tech }: any) {
     </div>
   );
 }
+
