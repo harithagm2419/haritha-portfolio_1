@@ -279,7 +279,7 @@ export default function Home() {
   </p>
 
   <a
-    href="mailto:yourmail@email.com"
+    href="harithagm2419@gmail.com"
     className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition"
   >
     Send Me an Email
@@ -297,7 +297,7 @@ export default function Home() {
           <a href = "harithagm2419@gmail.com">📧 Official Mail</a>
         </p>
         <p className="text-slate-300">
-      📱 +49 XXXXXXXX
+      📱 +49 15510553970
     </p>
     <p className="text-slate-300">
       📍 Offenburg, Germany
@@ -308,14 +308,14 @@ export default function Home() {
           target="_blank"
           className="text-blue-400 hover:underline"
         >
-          LinkedIn Profile
+          LinkedIn Profile  
         </a>
         <a
           href="https://github.com/harithagm2419/haritha-portfolio_1"
           target="_blank"
           className="text-blue-400 hover:underline"
         >
-          GitHub
+           GitHub
         </a>
 
       </section>
