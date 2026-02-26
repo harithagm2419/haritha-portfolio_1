@@ -132,25 +132,29 @@ export default function Home() {
 
 {/* EXPERIENCE SECTION */}
 <section id="experience" className="py-20 px-6 max-w-5xl mx-auto">
-  <h2 className="text-3xl font-semibold mb-10 text-blue-400">
+  <h2 className="text-3xl font-semibold mb-12 text-blue-400">
     Professional Experience
   </h2>
 
-  <div className="relative border-l border-white-700">
+  <div className="space-y-12">
 
     {/* ITEM 1 */}
-    <div className="mb-12 ml-8">
-      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
+    <div className="flex flex-col md:flex-row md:gap-12">
+      {/* LEFT – DATE */}
+      <div className="md:w-1/4 text-blue-400 font-medium">
+        Nov 2025 – Dec 2025
+      </div>
 
-      <div className="bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      {/* RIGHT – CONTENT */}
+      <div className="md:w-3/4">
         <h3 className="text-lg font-semibold text-white">
           Working Student – Python Programming
         </h3>
-        <p className="text-sm text-blue-400">
-          Digital Supply Chain, Gengenbach | Nov 2025 – Dec 2025
+        <p className="text-slate-400 text-sm mb-4">
+          Digital Supply Chain, Gengenbach
         </p>
 
-        <ul className="mt-4 text-slate-300 space-y-2 text-sm list-disc list-inside">
+        <ul className="text-slate-300 space-y-2 text-sm list-disc list-inside">
           <li>Developed Python-based image & data processing solutions</li>
           <li>Built React + Tailwind web interfaces</li>
           <li>Supported backend–frontend analytical integrations</li>
@@ -159,18 +163,20 @@ export default function Home() {
     </div>
 
     {/* ITEM 2 */}
-    <div className="mb-12 ml-8">
-      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
+    <div className="flex flex-col md:flex-row md:gap-12">
+      <div className="md:w-1/4 text-blue-400 font-medium">
+        Jul 2025 – Aug 2025
+      </div>
 
-      <div className="bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <div className="md:w-3/4">
         <h3 className="text-lg font-semibold text-white">
           Working Student – Data Science
         </h3>
-        <p className="text-sm text-blue-400">
-          Work Life Robotics Institute, Offenburg | Jul 2025 – Aug 2025
+        <p className="text-slate-400 text-sm mb-4">
+          Work Life Robotics Institute, Offenburg
         </p>
 
-        <ul className="mt-4 text-slate-300 space-y-2 text-sm list-disc list-inside">
+        <ul className="text-slate-300 space-y-2 text-sm list-disc list-inside">
           <li>Extracted and merged 3D sensor point cloud data</li>
           <li>Labeled datasets using Open3D</li>
           <li>Used Python (NumPy, Pandas) for validation & feature extraction</li>
@@ -179,18 +185,20 @@ export default function Home() {
     </div>
 
     {/* ITEM 3 */}
-    <div className="mb-12 ml-8">
-      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
+    <div className="flex flex-col md:flex-row md:gap-12">
+      <div className="md:w-1/4 text-blue-400 font-medium">
+        May 2023 – Sep 2024
+      </div>
 
-      <div className="bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <div className="md:w-3/4">
         <h3 className="text-lg font-semibold text-white">
           Business Intelligence Analyst
         </h3>
-        <p className="text-sm text-blue-400">
-          Infosys Ltd – Client: Cummins Inc. | May 2023 – Sep 2024
+        <p className="text-slate-400 text-sm mb-4">
+          Infosys Ltd – Client: Cummins Inc.
         </p>
 
-        <ul className="mt-4 text-slate-300 space-y-2 text-sm list-disc list-inside">
+        <ul className="text-slate-300 space-y-2 text-sm list-disc list-inside">
           <li>Analyzed enterprise data using MS SQL</li>
           <li>Processed large datasets via PySpark (Databricks)</li>
           <li>Built Power BI dashboards & forecasting models</li>
@@ -199,18 +207,20 @@ export default function Home() {
     </div>
 
     {/* ITEM 4 */}
-    <div className="mb-12 ml-8">
-      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
+    <div className="flex flex-col md:flex-row md:gap-12">
+      <div className="md:w-1/4 text-blue-400 font-medium">
+        Jul 2022 – Sep 2024
+      </div>
 
-      <div className="bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <div className="md:w-3/4">
         <h3 className="text-lg font-semibold text-white">
           Data Analyst
         </h3>
-        <p className="text-sm text-blue-400">
-          Infosys Ltd | Jul 2022 – Sep 2024
+        <p className="text-slate-400 text-sm mb-4">
+          Infosys Ltd
         </p>
 
-        <ul className="mt-4 text-slate-300 space-y-2 text-sm list-disc list-inside">
+        <ul className="text-slate-300 space-y-2 text-sm list-disc list-inside">
           <li>Built scalable PySpark pipelines</li>
           <li>Optimized SQL performance</li>
           <li>Designed star-schema data models</li>
@@ -219,18 +229,20 @@ export default function Home() {
     </div>
 
     {/* ITEM 5 */}
-    <div className="ml-8">
-      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
+    <div className="flex flex-col md:flex-row md:gap-12">
+      <div className="md:w-1/4 text-blue-400 font-medium">
+        Mar 2022 – Jun 2022
+      </div>
 
-      <div className="bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <div className="md:w-3/4">
         <h3 className="text-lg font-semibold text-white">
           Data Analyst Intern
         </h3>
-        <p className="text-sm text-blue-400">
-          Infosys Ltd | Mar 2022 – Jun 2022
+        <p className="text-slate-400 text-sm mb-4">
+          Infosys Ltd
         </p>
 
-        <ul className="mt-4 text-slate-300 space-y-2 text-sm list-disc list-inside">
+        <ul className="text-slate-300 space-y-2 text-sm list-disc list-inside">
           <li>Trained in Java, DBMS, UNIX</li>
           <li>Learned ETL & dimensional data modeling</li>
         </ul>
