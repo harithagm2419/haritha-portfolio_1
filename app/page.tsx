@@ -135,7 +135,7 @@ export default function Home() {
   <h2 className="text-3xl font-semibold mb-12 text-blue-400">
     Professional Experience
   </h2>
-
+  <div className="relative border-l border-white-700">
   <div className="space-y-12">
 
     {/* ITEM 1 */}
@@ -248,7 +248,7 @@ export default function Home() {
         </ul>
       </div>
     </div>
-
+  </div>
   </div>
 </section>
 
