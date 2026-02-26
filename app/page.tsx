@@ -132,11 +132,11 @@ export default function Home() {
 
 {/* EXPERIENCE SECTION */}
 <section id="experience" className="py-20 px-6 max-w-5xl mx-auto">
-  <h2 className="text-3xl font-semibold mb-16 text-blue-400 text-center">
+  <h2 className="text-3xl font-semibold mb-10 text-blue-400">
     Professional Experience
   </h2>
 
-  <div className="relative border-l border-slate-700">
+  <div className="relative border-l border-white-700">
 
     {/* ITEM 1 */}
     <div className="mb-12 ml-8">
