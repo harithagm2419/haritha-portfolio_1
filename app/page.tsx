@@ -251,7 +251,7 @@ export default function Home() {
           <a href = "hthurpat@stud.hs-offenburg.de">📧 Student Mail</a>
         </p>
         <p className="text-gray-300 mb-4">
-          <a href = "harithagm2419@gmail.com">📧 Student Mail</a>
+          <a href = "harithagm2419@gmail.com">📧 Official Mail</a>
         </p>
 
         <a
