@@ -248,7 +248,10 @@ export default function Home() {
         </h2>
 
         <p className="text-gray-300 mb-4">
-          📧 harithagm2419@gmail.com
+          <a href = "hthurpat@stud.hs-offenburg.de">📧 Student Mail</a>
+        </p>
+        <p className="text-gray-300 mb-4">
+          <a href = "harithagm2419@gmail.com">📧 Student Mail</a>
         </p>
 
         <a
