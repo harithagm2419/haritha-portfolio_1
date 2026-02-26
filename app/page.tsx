@@ -269,6 +269,22 @@ export default function Home() {
 
 
       {/* CONTACT SECTION */}
+      <section id="contact" className="py-20 text-center">
+  <h2 className="text-3xl font-semibold text-blue-400 mb-6">
+    Let’s Work Together
+  </h2>
+
+  <p className="text-slate-400 mb-8">
+    I’m currently open to Working Student and Data Analyst opportunities in Germany.
+  </p>
+
+  <a
+    href="mailto:yourmail@email.com"
+    className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition"
+  >
+    Send Me an Email
+  </a>
+</section>
       <section id="contact" className="py-20 px-6 max-w-5xl mx-auto">
         <h2 className="text-3xl font-semibold mb-6 text-blue-400">
           Contact
@@ -280,6 +296,12 @@ export default function Home() {
         <p className="text-gray-300 mb-4">
           <a href = "harithagm2419@gmail.com">📧 Official Mail</a>
         </p>
+        <p className="text-slate-300">
+      📱 +49 XXXXXXXX
+    </p>
+    <p className="text-slate-300">
+      📍 Offenburg, Germany
+    </p>
 
         <a
           href="https://linkedin.com/in/haritha-thurpati-7b9280225"
@@ -288,6 +310,14 @@ export default function Home() {
         >
           LinkedIn Profile
         </a>
+        <a
+          href="https://github.com/harithagm2419/haritha-portfolio_1"
+          target="_blank"
+          className="text-blue-400 hover:underline"
+        >
+          GitHub
+        </a>
+
       </section>
 
     </main>
