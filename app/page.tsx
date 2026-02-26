@@ -140,6 +140,7 @@ export default function Home() {
 
     {/* ITEM 1 */}
     <div className="flex flex-col md:flex-row md:gap-12">
+      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
       {/* LEFT – DATE */}
       <div className="md:w-1/4 text-blue-400 font-medium">
         Nov 2025 – Dec 2025
@@ -164,6 +165,7 @@ export default function Home() {
 
     {/* ITEM 2 */}
     <div className="flex flex-col md:flex-row md:gap-12">
+      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
       <div className="md:w-1/4 text-blue-400 font-medium">
         Jul 2025 – Aug 2025
       </div>
@@ -186,6 +188,7 @@ export default function Home() {
 
     {/* ITEM 3 */}
     <div className="flex flex-col md:flex-row md:gap-12">
+      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
       <div className="md:w-1/4 text-blue-400 font-medium">
         May 2023 – Sep 2024
       </div>
@@ -208,6 +211,7 @@ export default function Home() {
 
     {/* ITEM 4 */}
     <div className="flex flex-col md:flex-row md:gap-12">
+      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
       <div className="md:w-1/4 text-blue-400 font-medium">
         Jul 2022 – Sep 2024
       </div>
@@ -230,6 +234,7 @@ export default function Home() {
 
     {/* ITEM 5 */}
     <div className="flex flex-col md:flex-row md:gap-12">
+      <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
       <div className="md:w-1/4 text-blue-400 font-medium">
         Mar 2022 – Jun 2022
       </div>
