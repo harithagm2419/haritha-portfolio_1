@@ -139,6 +139,7 @@ export default function Home() {
   <div className="space-y-12">
 
     {/* ITEM 1 */}
+    <div className="mb-12 ml-8">
     <div className="flex flex-col md:flex-row md:gap-12">
       <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
       {/* LEFT – DATE */}
@@ -160,10 +161,12 @@ export default function Home() {
           <li>Built React + Tailwind web interfaces</li>
           <li>Supported backend–frontend analytical integrations</li>
         </ul>
+        </div>
       </div>
     </div>
 
     {/* ITEM 2 */}
+    <div className="mb-12 ml-8">
     <div className="flex flex-col md:flex-row md:gap-12">
       <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
       <div className="md:w-1/4 text-blue-400 font-medium">
@@ -183,10 +186,12 @@ export default function Home() {
           <li>Labeled datasets using Open3D</li>
           <li>Used Python (NumPy, Pandas) for validation & feature extraction</li>
         </ul>
+        </div>
       </div>
     </div>
 
     {/* ITEM 3 */}
+    <div className="mb-12 ml-8">
     <div className="flex flex-col md:flex-row md:gap-12">
       <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
       <div className="md:w-1/4 text-blue-400 font-medium">
@@ -206,10 +211,12 @@ export default function Home() {
           <li>Processed large datasets via PySpark (Databricks)</li>
           <li>Built Power BI dashboards & forecasting models</li>
         </ul>
+        </div>
       </div>
     </div>
 
     {/* ITEM 4 */}
+    <div className="mb-12 ml-8">
     <div className="flex flex-col md:flex-row md:gap-12">
       <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
       <div className="md:w-1/4 text-blue-400 font-medium">
@@ -229,10 +236,12 @@ export default function Home() {
           <li>Optimized SQL performance</li>
           <li>Designed star-schema data models</li>
         </ul>
+        </div>
       </div>
     </div>
 
     {/* ITEM 5 */}
+    <div className="mb-12 ml-8">
     <div className="flex flex-col md:flex-row md:gap-12">
       <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 mt-2"></div>
       <div className="md:w-1/4 text-blue-400 font-medium">
@@ -251,6 +260,7 @@ export default function Home() {
           <li>Trained in Java, DBMS, UNIX</li>
           <li>Learned ETL & dimensional data modeling</li>
         </ul>
+        </div>
       </div>
     </div>
   </div>
